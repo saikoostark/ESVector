@@ -202,7 +202,7 @@ void ESVector<t>::insert(ESVector<t>::iterator it, t val){
 	return;
 	
 	int old_size = _size;
-	int new_size = max(len+1 , _size);
+	int new_size = max(len+1 , _size+1);
 	if((len+1) > _capacity){
 		t *temp = new t[_size];
 		for(int i = 0 ; i < _size ; i++)
